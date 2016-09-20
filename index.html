@@ -1,0 +1,2973 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<style>
+			/*引入字体*/
+			@font-face {font-family: "iconfont";
+			  src: url('iconfont.eot?t=1473383362'); /* IE9*/
+			  src: url('iconfont.eot?t=1473383362#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			  url('iconfont.woff?t=1473383362') format('woff'), /* chrome, firefox */
+			  url('iconfont.ttf?t=1473383362') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+			  url('iconfont.svg?t=1473383362#iconfont') format('svg'); /* iOS 4.1- */
+			}
+
+			.iconfont {
+			  font-family:"iconfont" !important;
+			  font-size:16px;
+			  font-style:normal;
+			  -webkit-font-smoothing: antialiased;
+			  -webkit-text-stroke-width: 0.2px;
+			 -moz-osx-font-smoothing: grayscale;
+			 }
+			.icon-gouwuche:before { content: "\e697"; }
+			.icon-sousuo:before { content: "\343e"; }
+			.icon-dayuhao:before { content: "\e612"; }
+			.icon-xuangoushouji:before { content: "\e601"; }
+			.icon-liwu:before { content: "\e62e"; }
+			.icon-jiazaizhong:before { content: "\e622"; }
+			.icon-yidongmobile212:before { content: "\e611"; }
+			.icon-huafei:before { content: "\e667"; }
+		</style>
+	</head>
+	<body>
+		<!--
+        	描述：site-bn-bar开始
+        -->
+		<div class="site-bn-bar">
+			<div class="container">
+				<a href="//www.mi.com/mimax/" class="site-bn-bar-link">
+					豪礼大放送，直降两百
+				</a>
+			</div>
+		</div>
+		
+		<!--
+        	描述：site-topbar开始
+        -->
+        <div class="site-topbar">
+        	<div class="container clearfix">
+        		<div class="topbar-nav clearfix">
+        			<a>小米商城</a><span class="sep">|</span>
+        			<a>MIUI</a><span  class="sep">|</span>
+        			<a>米聊</a><span  class="sep">|</span>
+        			<a>游戏</a><span  class="sep">|</span>
+        			<a>多看阅读</a><span  class="sep">|</span>
+        			<a>云服务</a><span  class="sep">|</span>
+        			<a>金融</a><span  class="sep">|</span>
+        			<a>小米网移动版</a><span  class="sep">|</span>
+        			<a>问题反馈</a><span  class="sep">|</span>
+        			<a>SelectRegion</a>
+        		</div>
+        		<div class="topbar-cart ">
+        			<a class="cart-mini" href="buygoods.html">
+        				<i class="iconfont">&#xe697;</i>   购物车
+        				<span class="cart-mini-num" id="cart-mini-num">（0）</span>
+        				<div class="cart-mini-goods">
+        					这里空空如也
+        				</div>
+        			</a>
+        			<div class="cart-menu">
+        				<div class="loading">
+        					<div class="loader"></div>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="topbar-info " id="not-login">
+        			<a class="link" href="login.html">登陆</a><span class="sep">|</span>
+        			<a class="link" href="register.html">注册</a><span class="sep">|</span>
+        			<span class="message"><a>消息通知</a></span>
+        		</div>
+        		<div class="topbar-info topbar-login" id="have-login">
+        			<a class="link" id="link" >登陆</a><span class="sep">|</span>
+        			<a class="link"  id="logoff">退出登录</a><span class="sep">|</span>
+        			<span class="message"><a>消息通知</a></span>
+        		</div>
+        	</div>
+        </div>
+        
+        
+        <!--
+        	描述：site-header开始
+        -->
+       <div class="site-header clearfix">
+        	<div class="container">
+        		<div class="header-logo">
+        			<a href = 'http://www.mi.com/index.html' title="小米官网" class="logo ir"><img src="img/mi-logo.png"/></a>
+        		</div>
+        		<div class="header-search">
+        			<input class="user-input" type="text" />
+        			<input class="user-btn" type="submit" value=""/>
+        			<div class="findGoods">
+        				<i class="iconfont ">&#x343e;</i>
+        			</div>
+        			<div class="hot-sell">
+        				<a href="javascript:;">红米Note4</a>
+        				<a href="javascript:;">小米笔记本Air</a>
+        			</div>
+        			<div class="keywordlist ">
+        				<ul class="result-list">
+        					<li data-key="小米手机5"><a href="javascript:;"></a><span>约有11件</span></li>
+        					<li data-key="空气进化器2"><a href="javascript:;"></a><span>约有11件</span></li>
+        					<li data-key="活塞耳机"><a href="javascript:;"></a><span>约有11件</span></li>
+        					<li data-key="小米路由器"><a href="javascript:;"></a><span>约有11件</span></li>
+        					<li data-key="移动电源"><a href="javascript:;"></a><span>约有11件</span></li>
+        					<li data-key="运动相机"><a href="javascript:;"></a><span>约有11件</span></li>
+        					<li data-key="小蚁摄像机"><a href="javascript:;"></a><span>约有11件</span></li>
+        					<li data-key="小米体重秤"><a href="javascript:;"></a><span>约有11件</span></li>
+        					<li data-key="小米插线板"><a href="javascript:;"></a><span>约有11件</span></li>
+        					<li data-key="配件优惠特装"><a href="javascript:;"></a><span>约有11件</span></li>
+        				</ul>
+        			</div>
+        		</div>
+        		<div class="header-nav">
+        			<ul class="nav-list clearfix">
+        				<li class="nav-category"><span><a href="javascript:;"></a></span></li>
+        				<li class="nav-item nav-position">
+        					<span><a href="javascript:;">小米手机</a></span>
+     						
+        				</li>
+        				<li class="nav-item"><span><a href="javascript:;">红米</a></span>
+        					
+        				</li>
+        				<li class="nav-item"><span><a href="javascript:;">平板·笔记本</a></span></li>
+        				<li class="nav-item"><span><a href="javascript:;">电视</a></span></li>
+        				<li class="nav-item"><span><a href="javascript:;">盒子·影音</a></span></li>
+        				<li class="nav-item"><span><a href="javascript:;">路由器</a></span></li>
+        				<li class="nav-item"><span><a href="javascript:;">智能硬件</a></span></li>
+        				<li class="nav-item"><span><a href="javascript:;">服务</a></span></li>
+        				<li class="nav-item"><span><a href="javascript:;">社区</a></span></li>
+        			</ul>
+        		</div>
+        		
+    		<div class="slideWrapper">
+        		<div class="item-children" > 
+        			<div class="item-wrapper clearfix">
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl >
+							<dt style="border-right:none">
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米手机5</p>
+								<p class="price">1799元起</p>
+							</dd>
+						</dl>
+        			</div>
+        		</div>
+        		<div class="item-children"> 
+        			<div class="item-wrapper clearfix">
+        				<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl >
+							<dt style="border-right:none">
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米手机5</p>
+								<p class="price">1799元起</p>
+							</dd>
+						</dl>
+        			</div>
+        		</div>
+        		<div class="item-children"> 
+        			<div class="item-wrapper clearfix">
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl >
+							<dt style="border-right:none">
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米手机5</p>
+								<p class="price">1799元起</p>
+							</dd>
+						</dl>
+        			</div>
+        		</div>
+        		<div class="item-children"> 
+        			<div class="item-wrapper clearfix">
+        				<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl >
+							<dt style="border-right:none">
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米手机5</p>
+								<p class="price">1799元起</p>
+							</dd>
+						</dl>
+        			</div>
+        		</div>
+				<div class="item-children"> 
+        			<div class="item-wrapper clearfix">
+        				<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl >
+							<dt style="border-right:none">
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米手机5</p>
+								<p class="price">1799元起</p>
+							</dd>
+						</dl>
+        			</div>
+        		</div>
+        		<div class="item-children"> 
+        			<div class="item-wrapper clearfix">
+        				<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl >
+							<dt style="border-right:none">
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米手机5</p>
+								<p class="price">1799元起</p>
+							</dd>
+						</dl>
+        			</div>
+        		</div>
+
+				<div class="item-children">
+        			<div class="item-wrapper clearfix">
+        				<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl class="fl">
+							<dt>
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米Max</p>
+								<p class="price">1299元起</p>
+							</dd>
+						</dl>
+						<dl >
+							<dt style="border-right:none">
+								<img src="img/phone11.jpg" />
+							</dt>
+							<dd>
+								<p>小米手机5</p>
+								<p class="price">1799元起</p>
+							</dd>
+						</dl>
+        			</div>
+    			</div>
+    			<div class="item-children" style="border-top:none"></div>
+    			<div class="item-children" style="border-top:none"></div>
+    		</div>
+    		
+        	
+        </div>
+		</div>
+		
+		<div class="banner-menu">
+			<!--轮播图开始-->
+			<div class="banner-auto">
+				<div class="container">
+					<img src="img/banner1.jpg" class="item-img changeop">
+					<img src="img/banner2.jpg"  class="item-img">
+					<img src="img/banner3.jpg"  class="item-img">
+					<img src="img/banner4.jpg"  class="item-img">
+					<img src="img/banner5.jpg"  class="item-img">
+					<div class="right-btn btn"></div>
+					<div class="left-btn btn"></div>
+					<div class="circle">
+						<span class="circle-item"><span class=" changebg "></span></span>
+						<span class="circle-item"><span></span></span>
+						<span class="circle-item"><span></span></span>
+						<span class="circle-item"><span></span></span>
+						<span class="circle-item"><span></span></span>
+					</div>
+				</div>
+			</div>
+			<!--左侧选项卡开始-->
+			<div class="header-nav-menu">
+	        	<ul class="header-nav-content">
+	        		<li class="nav-content-item"><a href="javascript:;">手机 电话卡<i class="iconfont">&#xe612;</i></a></li>
+	        		<li class="nav-content-item"><a href="javascript:;">笔记本 平板<i class="iconfont">&#xe612;</i></a></li>
+	        		<li class="nav-content-item"><a href="javascript:;">电视 盒子<i class="iconfont">&#xe612;</i></a></li>
+	        		<li class="nav-content-item"><a href="javascript:;">路由器 智能硬件<i class="iconfont">&#xe612;</i></a></li>
+	        		<li class="nav-content-item"><a href="javascript:;">移动电源 电池 插线板<i class="iconfont">&#xe612;</i></a></li>
+	        		<li class="nav-content-item"><a href="javascript:;">耳机 音响<i class="iconfont">&#xe612;</i></a></li>
+	        		<li class="nav-content-item"><a href="javascript:;">保护套 贴膜<i class="iconfont">&#xe612;</i></a></li>
+	        		<li class="nav-content-item"><a href="javascript:;">线材 支架 存储卡<i class="iconfont">&#xe612;</i></a></li>
+	        		<li class="nav-content-item"><a href="javascript:;">箱包 服饰<i class="iconfont">&#xe612;</i></a></li>
+	        		<li class="nav-content-item"><a href="javascript:;">米兔 生活周边<i class="iconfont">&#xe612;</i></a></li>
+	        		<div class="second-item">
+	        			<ul class="fl">
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>	
+	        			</ul>
+	        			<ul class="fr">
+	        				<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>	
+	        			</ul>
+	        		</div>
+	        		<div class="second-item">
+	        			<ul class="fl">
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>	
+	        			</ul>
+	        		</div>
+	        		<div class="second-item">
+	        			<ul class="fl">
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			
+	        			</ul>
+	        		</div>
+	        		<div class="second-item">
+	        			<ul class="fl">
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+	        			</ul>
+	        		</div>
+	        		<div class="second-item">
+	        			<ul class="fl">
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>	
+	        			</ul>
+	        		</div>
+	        		<div class="second-item">
+	        			<ul class="fl">
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>	
+	        			</ul>
+	        			<ul class="fr">
+	        				<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+	        			</ul>
+	        		</div>
+	        		<div class="second-item">
+	        			<ul class="fl">
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>	
+	        			</ul>
+	        			<ul class="fr">
+	        				<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+	        			</ul>
+	        		</div>
+	        		<div class="second-item">
+	        			<ul class="fl">
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+	        			</ul>
+	        			<ul class="fr">
+	        				<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+	        			</ul>
+	        		</div>
+					<div class="second-item">
+	        			<ul class="fl">
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+	        			</ul>
+	        			<ul class="fr">
+	        				<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+	        			</ul>
+	        		</div>
+	        		<div class="second-item">
+	        			<ul class="fl">
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			
+	        			</ul>
+	        			<ul class="fr">
+	        				<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+	        				<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>	
+	        			</ul>
+	        		</div>
+	        		<div class="second-item">
+	        			<ul class="fl">
+		        			
+		        			
+	        			</ul>
+	        			<ul class="fr">
+	        				<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+	        				<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>
+		        			<li><img src="img/bannerleft.jpg"/><em>小米手机5</em><span>选购</span></li>	
+	        			</ul>
+	        		</div>
+	        	</ul>	
+			 </div>
+			
+		</div>
+		
+			
+		<!--下面图片开始-->
+		 <div class="home-hero-sub ">
+ 			<div class="home-promo-div">
+ 				<ul class="home-promo-firstList">
+ 					<li><a href="javascript:;"><i class="iconfont">&#xe601;</i><p>选购手机</p></a></li>
+ 					<li><a href="javascript:;"><i class="iconfont">&#xe62e;</i><p>企业团购</p></a></li>
+ 					<li><a href="javascript:;"><i class="iconfont">&#xe622;</i><p>官翻产品</p></a></li>
+ 					<li><a href="javascript:;"><i class="iconfont">&#xe611;</i><p>小米移动</p></a></li>
+ 					<li><a href="javascript:;"><i class="iconfont">&#xe611;</i><p>以旧换新</p></a></li>
+ 					<li><a href="javascript:;"><i class="iconfont">&#xe667;</i><p>话费充值</p></a></li>
+ 				</ul>
+ 			</div>
+ 			<ul class="home-promo-list">
+ 				<li style="margin-left:0 ;">
+ 					<a href="javascript:;"><img src='img/image1.jpg'/></a>
+ 				</li>
+ 				<li>
+ 					<a  href="javascript:;"><img src='img/image2.jpg'/></a>
+ 				</li>
+ 				<li>
+ 					<a  href="javascript:;"><img src='img/image3.jpg'/></a>
+ 				</li>
+ 			</ul>
+		 </div>
+		
+		
+		<!--816热门商品推荐开始-->
+		<div class="home-star-goods container" id="home-star">
+			<div class="box-hd">
+				<h2 class="title">小米明星单品</h2>
+				<div class="more">
+					<div class="xm-controls">
+						<a class="controls-left controls" href="javascript:;">〈</a>
+						<a class="controls-right controls" href="javascript:;">〉</a>
+					</div>
+				</div>
+			</div>
+			<div class="home-star-wrapper">
+				<ul class="home-star-list">
+					<li class="rainbow-item-1"><a href="javascript:;"><img src="img/store1.png"></a><h3 class="small-title">小米手机5 高配版</h3><p class="desc">3GB内存+64GB容量 高配版</p><p class="price">2099元</p></li>
+					<li class="rainbow-item-2"><a href="javascript:;"><img src="img/store2.jpg"></a><h3 class="small-title">小米手机5 高配版</h3><p class="desc">3GB内存+64GB容量 高配版</p><p class="price">2099元</p></li>
+					<li class="rainbow-item-3"><a href="javascript:;"><img src="img/store3.jpg"></a><h3 class="small-title">小米手机5 高配版</h3><p class="desc">3GB内存+64GB容量 高配版</p><p class="price">2099元</p></li>
+					<li class="rainbow-item-4"><a href="javascript:;"><img src="img/store4.png"></a><h3 class="small-title">小米手机5 高配版</h3><p class="desc">3GB内存+64GB容量 高配版</p><p class="price">2099元</p></li>
+					<li class="rainbow-item-5"><a href="javascript:;"><img src="img/store5.jpg"></a><h3 class="small-title">小米手机5 高配版</h3><p class="desc">3GB内存+64GB容量 高配版</p><p class="price">2099元</p></li>
+					<li class="rainbow-item-6"><a href="shopcart.html"><img src="img/store6.jpg"></a><h3 class="small-title">小米手机5 高配版</h3><p class="desc">3GB内存+64GB容量 高配版</p><p class="price">2099元</p></li>
+					<li class="rainbow-item-7"><a href="javascript:;"><img src="img/store7.png"></a><h3 class="small-title">小米手机5 高配版</h3><p class="desc">3GB内存+64GB容量 高配版</p><p class="price">2099元</p></li>
+					<li class="rainbow-item-8"><a href="javascript:;"><img src="img/store8.png"></a><h3 class="small-title">小米手机5 高配版</h3><p class="desc">3GB内存+64GB容量 高配版</p><p class="price">2099元</p></li>
+					<li class="rainbow-item-9"><a href="javascript:;"><img src="img/store9.jpg"></a><h3 class="small-title">小米手机5 高配版</h3><p class="desc">3GB内存+64GB容量 高配版</p><p class="price">2099元</p></li>
+					<li class="rainbow-item-10"><a href="javascript:;"><img src="img/store10.png"></a><h3 class="small-title">小米手机5 高配版</h3><p class="desc">3GB内存+64GB容量 高配版</p><p class="price">2099元</p></li>	
+				</ul>
+			</div>
+		</div>
+		<div style="background:#f5f5f5">
+			<!--下方选项卡开始-->
+			<div id="match" class="home-brick-box xm-plain-box">
+				<div class="box-hd">
+					<h2 class="title">搭配</h2>
+					<div class="more">
+						<ul class="tab-list clearfix">
+							<li class="tab-active tab-li">热门</li>
+							<li class="tab-li">耳机音响</li>
+							<li class="tab-li">电源</li>
+							<li class="tab-li">电池存储卡</li>
+						</ul>
+					</div>
+				</div>
+				<div class="box-bd">
+					<div class="row">
+						<div class="span4 span-first">
+							<ul class="clearfix brick-promo-list">
+								<li class="brick-item brick-item-m " style="float:none;margin-left:0">
+									<a href="javascript:;">
+										<img src="img/bottomSlide1.jpg" width="234"  />	
+									</a>
+								</li>
+								<li class="brick-item brick-item-m" style="float:none;margin-left:0">
+									<a href="javascript:;">
+										<img src="img/bottomSlide2.jpg" width="234" />
+									</a>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="span16">
+							<div class="tab-container" id="match-content">
+								<ul class="brick-list tab-content clearfix tab-content-active">
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/yidongdianyuan.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/yidongdianyuan.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+									
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/yidongdianyuan.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/yidongdianyuan.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/yidongdianyuan.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/yidongdianyuan.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/yidongdianyuan.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/yidongdianyuan.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+	
+								</ul>
+								<ul class="brick-list tab-content clearfix ">
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/erji.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/erji.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+									
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/erji.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/erji.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/erji.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/erji.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/erji.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/erji.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+	
+								</ul>
+								<ul class="brick-list tab-content clearfix ">
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/dianyuan.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/dianyuan.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+									
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/dianyuan.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/dianyuan.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/dianyuan.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/dianyuan.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/dianyuan.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/dianyuan.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+	
+								</ul>
+								<ul class="brick-list tab-content clearfix ">
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/dianchi.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/dianchi.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+									
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/dianchi.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/dianchi.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/dianchi.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/dianchi.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/dianchi.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/dianchi.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+	
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<!--第二个选项卡-->
+			<div id="mached" class="home-brick-box xm-plain-box">
+				<div class="box-hd">
+					<h2 class="title">配件</h2>
+					<div class="more">
+						<ul class="tab-list clearfix">
+							<li class="tab-active tab-li">热门</li>
+							<li class="tab-li">保护套</li>
+							<li class="tab-li">贴膜</li>
+							<li class="tab-li">其他配件</li>
+						</ul>
+					</div>
+				</div>
+				<div class="box-bd">
+					<div class="row">
+						<div class="span4 span-first">
+							<ul class="clearfix brick-promo-list">
+								<li class="brick-item brick-item-m " style="float:none;margin-left:0">
+									<a href="javascript:;">
+										<img src="img/qizheqi.jpg" width="234"  />	
+									</a>
+								</li>
+								<li class="brick-item brick-item-m" style="float:none;margin-left:0">
+									<a href="javascript:;">
+										<img src="img/xiaomichaxianban.jpg" width="234" />
+									</a>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="span16">
+							<div class="tab-container" id="match-content">
+								<ul class="brick-list tab-content clearfix tab-content-active">
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/baohutao.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/baohutao.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+									
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/baohutao.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/baohutao.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/baohutao.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/baohutao.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/baohutao.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/baohutao.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+	
+								</ul>
+								<ul class="brick-list tab-content clearfix ">
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/baohuke.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/baohuke.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+									
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/baohuke.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/baohuke.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/baohuke.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/baohuke.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/baohuke.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/baohuke.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+	
+								</ul>
+								<ul class="brick-list tab-content clearfix ">
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/tiemo.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/tiemo.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+									
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/tiemo.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/tiemo.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/tiemo.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/tiemo.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/tiemo.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/tiemo.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+	
+								</ul>
+								<ul class="brick-list tab-content clearfix ">
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/shoubing.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/shoubing.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+									
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/shoubing.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/shoubing.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/shoubing.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/shoubing.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+		
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/shoubing.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/shoubing.jpg"  />
+											</a>
+										</div>
+										<h3 class="title">
+											小米移动电源5000mAh
+										</h3>
+										<span class="num">49元</span>
+										
+										<p class="rank">9万人评价</p>
+										<div class="review-wrapper">
+											<a>
+												<span class="review">
+													之前都不知道，还以为是20000的电芯，拿到手一看才...
+												</span>
+												<span class="author">
+													来自于ywtdzhtd的评价
+												</span>
+											</a>
+										</div>
+									</li>
+	
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<!--816热门商品推荐开始第二波-->
+			<div class="home-star-goods container" id="home-stared">
+				<div class="box-hd">
+					<h2 class="title">为您推荐</h2>
+					<div class="more">
+						<div class="xm-controls">
+							<a class="controls-left controls" href="javascript:;">〈</a>
+							<a class="controls-right controls" href="javascript:;">〉</a>
+						</div>
+					</div>
+				</div>
+				<div class="home-star-wrapper">
+					<ul class="home-star-list">
+						<li class="rainbow-item-1"><a href="javascript:;"><img src="img/store1.png"></a><h3 class="small-title">小米手机5 高配版</h3><p class="desc">3GB内存+64GB容量 高配版</p><p class="price">2099元</p></li>
+						<li class="rainbow-item-2"><a href="javascript:;"><img src="img/store2.jpg"></a><h3 class="small-title">小米手机5 高配版</h3><p class="desc">3GB内存+64GB容量 高配版</p><p class="price">2099元</p></li>
+						<li class="rainbow-item-3"><a href="javascript:;"><img src="img/store3.jpg"></a><h3 class="small-title">小米手机5 高配版</h3><p class="desc">3GB内存+64GB容量 高配版</p><p class="price">2099元</p></li>
+						<li class="rainbow-item-4"><a href="javascript:;"><img src="img/store4.png"></a><h3 class="small-title">小米手机5 高配版</h3><p class="desc">3GB内存+64GB容量 高配版</p><p class="price">2099元</p></li>
+						<li class="rainbow-item-5"><a href="javascript:;"><img src="img/store5.jpg"></a><h3 class="small-title">小米手机5 高配版</h3><p class="desc">3GB内存+64GB容量 高配版</p><p class="price">2099元</p></li>
+						<li class="rainbow-item-6"><a href="javascript:;"><img src="img/store6.jpg"></a><h3 class="small-title">小米手机5 高配版</h3><p class="desc">3GB内存+64GB容量 高配版</p><p class="price">2099元</p></li>
+						<li class="rainbow-item-7"><a href="javascript:;"><img src="img/store7.png"></a><h3 class="small-title">小米手机5 高配版</h3><p class="desc">3GB内存+64GB容量 高配版</p><p class="price">2099元</p></li>
+						<li class="rainbow-item-8"><a href="javascript:;"><img src="img/store8.png"></a><h3 class="small-title">小米手机5 高配版</h3><p class="desc">3GB内存+64GB容量 高配版</p><p class="price">2099元</p></li>
+						<li class="rainbow-item-9"><a href="javascript:;"><img src="img/store9.jpg"></a><h3 class="small-title">小米手机5 高配版</h3><p class="desc">3GB内存+64GB容量 高配版</p><p class="price">2099元</p></li>
+						<li class="rainbow-item-10"><a href="javascript:;"><img src="img/store10.png"></a><h3 class="small-title">小米手机5 高配版</h3><p class="desc">3GB内存+64GB容量 高配版</p><p class="price">2099元</p></li>	
+					</ul>
+				</div>
+			</div>
+			
+			<!--热评产品-->
+			<div class="home-review-box container">
+				<div class="box-hd">
+					<h2 class="title">
+						热评产品
+					</h2>
+				</div>
+				<div class="box-bd clearfix">
+					<ul class="review-list clearfix">
+						<li class="review-item change-margin" style="margin-left:0">
+							<div class="figure figure-img">
+								<a><img src="img/reping1.jpg"/></a>
+							</div>
+							<p class="review">这箱子很好，外观漂亮，实用性强。很轻，有点软，但不影响它的坚固。</p>
+							<p class="author">来自于紫淑艳的评价</p>
+							<div class="info">
+								<h3 class="title">90分旅行箱 20寸</h3>
+								<span class="sep">|</span>
+								<span class="num">299元</span>
+							</div>
+						</li>
+						<li class="review-item change-margin" >
+							<div class="figure figure-img">
+								<a><img src="img/bijiben0.jpg"/></a>
+							</div>
+							<p class="review">外观大气漂亮，全金属机身，爱不释手，希望推出更多版本，支持小米</p>
+							<p class="author">来自于681777的评价</p>
+							<div class="info">
+								<h3 class="title">小米笔记本Air 12.5寸</h3>
+								<span class="sep">|</span>
+								<span class="num">3499元</span>
+							</div>
+						</li>
+						<li class="review-item change-margin" >
+							<div class="figure figure-img">
+								<a><img src="img/lanya.jpg"/></a>
+							</div>
+							<p class="review">超级喜欢！小巧玲珑！音质完美！不知道为什么只要是小米出的东西我都喜欢！那倒是因为那一句！小米为发...</p>
+							<p class="author">来自于田密的评价</p>
+							<div class="info">
+								<h3 class="title">小米随身蓝牙音箱</h3>
+								<span class="sep">|</span>
+								<span class="num">69元</span>
+							</div>
+						</li>
+						<li class="review-item change-margin" >
+							<div class="figure figure-img">
+								<a><img src="img/dianfanbao.jpg"/></a>
+							</div>
+							<p class="review">包装很让人感动，样式也很可爱，做出的饭全家都爱吃，超爱五星！手机控制还不太熟练，最主要是没有连接...</p>
+							<p class="author">来自于HZG的评价</p>
+							<div class="info">
+								<h3 class="title">米家压力IH电饭煲</h3>
+								<span class="sep">|</span>
+								<span class="num">999元</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		
+		
+			<!--内容-->
+			<div class="home-content-box container clearfix"  style="margin-top:10px">
+				<div class="box-hd">
+					<h2 class="title">
+						内容
+					</h2>
+				</div>
+				<div class="box-bd clearfix">
+					<ul class="content-list clearfix">
+						<li class="change-margin content-item content-item-book content-item-first" id="content">
+							<h2 class="title">图书</h2>
+							<div class="xm-carousel-wrapper" style="height:340px;overflow: hidden;">
+								<ul class="item-list clearfix">
+									<li >
+										<h4 class="name">
+											<a href="javascript">
+												哈利·波特与魔法石
+											</a>
+										</h4>
+										<p class="desc">
+											<a href="javascript:;">哈利波特来了</a>
+										</p>
+										<p class="price">
+											<a>免费</a>
+										</p>
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/HAPPY.jpg" />
+											</a>
+										</div>
+									</li>
+									<li>
+										<h4 class="name">
+											<a href="javascript">
+												特价专区
+											</a>
+										</h4>
+										<p class="desc">
+											<a href="javascript:;">精选畅销好书，特价促销，天天更新，天天特价！</a>
+										</p>
+										<p class="price">
+											<a>限时优惠</a>
+										</p>
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/readBook.jpg" />
+											</a>
+										</div>
+									</li>
+									<li>
+										<h4 class="name">
+											<a href="javascript">
+												杂志专区
+											</a>
+										</h4>
+										<p class="desc">
+											<a href="javascript:;">纸媒杂志+互联网杂志，你想看的这都有</a>
+										</p>
+										<p class="price">
+											<a>同步新刊上线</a>
+										</p>
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/memorize.jpg" />
+											</a>
+										</div>
+									</li>
+									<li>
+										
+										<p class="desc">
+											<a href="javascript:;">海量好书，享受精品阅读时光 漂亮的中文排版，千万读者的选择</a>
+										</p>
+										<p class="go-read">
+											前往多看阅读
+										</p>
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/more-duokan.jpg" />
+											</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="xm-pagers-wrapper">
+								<ul class="xm-pagers">
+									<li class="pager pager-active">
+										<span class="dot"></span>
+									</li>
+									<li class="pager ">
+										<span class="dot"></span>
+									</li>
+									<li class="pager">
+										<span class="dot"></span>
+									</li>
+									<li class="pager">
+										<span class="dot"></span>
+									</li>
+									
+								</ul>
+							</div>
+							<div class="controls-next control-btn">
+								<span> <a href="javascript:;">〉 </a></span>
+							</div>
+							<div class="controls-previous control-btn">
+								<span> <a href="javascript:;">〈</a> </span>
+							</div>
+						</li>
+						<li class="change-margin content-item content-item-book " id="contentSecond">
+							<h2 class="title">图书</h2>
+							<div class="xm-carousel-wrapper" style="height:340px;overflow: hidden;">
+								<ul class="item-list clearfix">
+									<li >
+										<h4 class="name">
+											<a href="javascript">
+												哈利·波特与魔法石
+											</a>
+										</h4>
+										<p class="desc">
+											<a href="javascript:;">哈利波特来了</a>
+										</p>
+										<p class="price">
+											<a>免费</a>
+										</p>
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/HAPPY.jpg" />
+											</a>
+										</div>
+									</li>
+									<li>
+										<h4 class="name">
+											<a href="javascript">
+												特价专区
+											</a>
+										</h4>
+										<p class="desc">
+											<a href="javascript:;">精选畅销好书，特价促销，天天更新，天天特价！</a>
+										</p>
+										<p class="price">
+											<a>限时优惠</a>
+										</p>
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/readBook.jpg" />
+											</a>
+										</div>
+									</li>
+									<li>
+										<h4 class="name">
+											<a href="javascript">
+												杂志专区
+											</a>
+										</h4>
+										<p class="desc">
+											<a href="javascript:;">纸媒杂志+互联网杂志，你想看的这都有</a>
+										</p>
+										<p class="price">
+											<a>同步新刊上线</a>
+										</p>
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/memorize.jpg" />
+											</a>
+										</div>
+									</li>
+									<li>
+										
+										<p class="desc">
+											<a href="javascript:;">海量好书，享受精品阅读时光 漂亮的中文排版，千万读者的选择</a>
+										</p>
+										<p class="go-read">
+											前往多看阅读
+										</p>
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/more-duokan.jpg" />
+											</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="xm-pagers-wrapper">
+								<ul class="xm-pagers">
+									<li class="pager pager-active">
+										<span class="dot"></span>
+									</li>
+									<li class="pager ">
+										<span class="dot"></span>
+									</li>
+									<li class="pager">
+										<span class="dot"></span>
+									</li>
+									<li class="pager">
+										<span class="dot"></span>
+									</li>
+									
+								</ul>
+							</div>
+							<div class="controls-next control-btn">
+								<span> <a href="javascript:;">〉 </a></span>
+							</div>
+							<div class="controls-previous control-btn">
+								<span> <a href="javascript:;">〈</a> </span>
+							</div>
+						</li>
+						<li class="change-margin content-item content-item-book " id="contentTree">
+							<h2 class="title">图书</h2>
+							<div class="xm-carousel-wrapper" style="height:340px;overflow: hidden;">
+								<ul class="item-list clearfix">
+									<li >
+										<h4 class="name">
+											<a href="javascript">
+												哈利·波特与魔法石
+											</a>
+										</h4>
+										<p class="desc">
+											<a href="javascript:;">哈利波特来了</a>
+										</p>
+										<p class="price">
+											<a>免费</a>
+										</p>
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/HAPPY.jpg" />
+											</a>
+										</div>
+									</li>
+									<li>
+										<h4 class="name">
+											<a href="javascript">
+												特价专区
+											</a>
+										</h4>
+										<p class="desc">
+											<a href="javascript:;">精选畅销好书，特价促销，天天更新，天天特价！</a>
+										</p>
+										<p class="price">
+											<a>限时优惠</a>
+										</p>
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/readBook.jpg" />
+											</a>
+										</div>
+									</li>
+									<li>
+										<h4 class="name">
+											<a href="javascript">
+												杂志专区
+											</a>
+										</h4>
+										<p class="desc">
+											<a href="javascript:;">纸媒杂志+互联网杂志，你想看的这都有</a>
+										</p>
+										<p class="price">
+											<a>同步新刊上线</a>
+										</p>
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/memorize.jpg" />
+											</a>
+										</div>
+									</li>
+									<li>
+										
+										<p class="desc">
+											<a href="javascript:;">海量好书，享受精品阅读时光 漂亮的中文排版，千万读者的选择</a>
+										</p>
+										<p class="go-read">
+											前往多看阅读
+										</p>
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/more-duokan.jpg" />
+											</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="xm-pagers-wrapper">
+								<ul class="xm-pagers">
+									<li class="pager pager-active">
+										<span class="dot"></span>
+									</li>
+									<li class="pager ">
+										<span class="dot"></span>
+									</li>
+									<li class="pager">
+										<span class="dot"></span>
+									</li>
+									<li class="pager">
+										<span class="dot"></span>
+									</li>
+									
+								</ul>
+							</div>
+							<div class="controls-next control-btn">
+								<span> <a href="javascript:;">〉 </a></span>
+							</div>
+							<div class="controls-previous control-btn">
+								<span> <a href="javascript:;">〈</a> </span>
+							</div>
+						</li>
+						<li class="change-margin content-item content-item-book " id="contentLast">
+							<h2 class="title">图书</h2>
+							<div class="xm-carousel-wrapper" style="height:340px;overflow: hidden;">
+								<ul class="item-list clearfix">
+									<li >
+										<h4 class="name">
+											<a href="javascript">
+												哈利·波特与魔法石
+											</a>
+										</h4>
+										<p class="desc">
+											<a href="javascript:;">哈利波特来了</a>
+										</p>
+										<p class="price">
+											<a>免费</a>
+										</p>
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/HAPPY.jpg" />
+											</a>
+										</div>
+									</li>
+									<li>
+										<h4 class="name">
+											<a href="javascript">
+												特价专区
+											</a>
+										</h4>
+										<p class="desc">
+											<a href="javascript:;">精选畅销好书，特价促销，天天更新，天天特价！</a>
+										</p>
+										<p class="price">
+											<a>限时优惠</a>
+										</p>
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/readBook.jpg" />
+											</a>
+										</div>
+									</li>
+									<li>
+										<h4 class="name">
+											<a href="javascript">
+												杂志专区
+											</a>
+										</h4>
+										<p class="desc">
+											<a href="javascript:;">纸媒杂志+互联网杂志，你想看的这都有</a>
+										</p>
+										<p class="price">
+											<a>同步新刊上线</a>
+										</p>
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/memorize.jpg" />
+											</a>
+										</div>
+									</li>
+									<li>
+										
+										<p class="desc">
+											<a href="javascript:;">海量好书，享受精品阅读时光 漂亮的中文排版，千万读者的选择</a>
+										</p>
+										<p class="go-read">
+											前往多看阅读
+										</p>
+										<div class="figure figure-img">
+											<a href="javascript:;">
+												<img src="img/more-duokan.jpg" />
+											</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="xm-pagers-wrapper">
+								<ul class="xm-pagers">
+									<li class="pager pager-active">
+										<span class="dot"></span>
+									</li>
+									<li class="pager ">
+										<span class="dot"></span>
+									</li>
+									<li class="pager">
+										<span class="dot"></span>
+									</li>
+									<li class="pager">
+										<span class="dot"></span>
+									</li>
+									
+								</ul>
+							</div>
+							<div class="controls-next control-btn">
+								<span> <a href="javascript:;">〉 </a></span>
+							</div>
+							<div class="controls-previous control-btn">
+								<span> <a href="javascript:;">〈</a> </span>
+							</div>
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+			
+			
+			<!--视频-->
+			<div id="video" class="home-video-box container xm-plain-box">
+				<div class="box-hd">
+					<h2>视频</h2>
+					<div class="more">
+						<a href="javascript:;" class="more-link">
+							查看全部
+							<i class="iconfont">&#xe612;</i>
+						</a>
+					</div>
+				</div>
+				<div class="box-bd">
+					<ul class="video-list clearfix">
+						<li class="video-item video-item-first change-margin">
+							<div class="figure figure-img">
+								<a href="javascript:;">
+									<img src="img/vedio1.jpg">
+									<span class="play">Go</span>
+								</a>
+							</div>
+							<h3 class="title">
+								<a href="javascript:;">红米年度品牌视频</a>
+							</h3>
+							<p class="desc">
+								一亿人喜爱你，是一种责任
+							</p>
+						</li>
+						<li class="video-item change-margin">
+							<div class="figure figure-img">
+								<a href="javascript:;">
+									<img src="img/vedio2.jpg">
+									<span class="play">Go</span>
+								</a>
+							</div>
+							<h3 class="title">
+								<a href="javascript:;">小米笔记本Air最全介绍视频</a>
+							</h3>
+							<p class="desc">
+								带独立显卡的轻薄笔记本
+							</p>
+						</li>
+						<li class="video-item change-margin">
+							<div class="figure figure-img">
+								<a href="javascript:;">
+									<img src="img/vedio3.jpg">
+									<span class="play">Go</span>
+								</a>
+							</div>
+							<h3 class="title">
+								<a href="javascript:;">小米笔记本Air可靠性测试视频</a>
+							</h3>
+							<p class="desc">
+								小米笔记本Air是如何炼成的
+							</p>
+						</li>
+						<li class="video-item change-margin">
+							<div class="figure figure-img">
+								<a href="javascript:;">
+									<img src="img/vedio4.jpg">
+									<span class="play">Go</span>
+								</a>
+							</div>
+							<h3 class="title">
+								<a href="javascript:;">小米Max 绝美外观视频</a>
+							</h3>
+							<p class="desc">
+								6.44大屏黄金尺寸，看什么都震撼
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<div class="site-footer">
+			<div class="container">
+				<div class="footer-service">
+					<ul class="clearfix list-service">
+						<li><a href="javascript"><i class="iconfont">&#x343e;</i>1小时快修服务</a></li>
+						<li><a href="javascript"><i class="iconfont">&#xe697;</i>7天无理由退货</a></li>
+						<li><a href="javascript"><i class="iconfont">&#xe622;</i>15天免费换货</a></li>
+						<li><a href="javascript"><i class="iconfont">&#xe62e;</i>满150元包邮</a></li>
+						<li><a href="javascript"><i class="iconfont">&#xe667;</i>520余家售后网点</a></li>
+					</ul>
+				</div>
+				<div class="footer-links clearfix">
+					<dl class="col-links col-links-first">
+						<dt>帮助中心</dt>
+						<dd><a href="javascript:;">账户管理</a></dd>
+						<dd><a href="javascript:;">购物指南</a></dd>
+						<dd><a href="javascript:;">订单操作</a></dd>
+					</dl>
+					<dl class="col-links">
+						<dt>服务支持</dt>
+						<dd><a href="javascript:;">售后政策</a></dd>
+						<dd><a href="javascript:;">自助服务</a></dd>
+						<dd><a href="javascript:;">相关下载</a></dd>
+					</dl>
+					<dl class="col-links">
+						<dt>线下门店</dt>
+						<dd><a href="javascript:;">小米之家</a></dd>
+						<dd><a href="javascript:;">服务网点</a></dd>
+						<dd><a href="javascript:;">零售网点</a></dd>
+					</dl>
+					<dl class="col-links">
+						<dt>关于小米</dt>
+						<dd><a href="javascript:;">了解小米</a></dd>
+						<dd><a href="javascript:;">联系小米</a></dd>
+						<dd><a href="javascript:;">加入我们</a></dd>
+					</dl>
+					<dl class="col-links">
+						<dt>关注我们</dt>
+						<dd><a href="javascript:;">新浪微博</a></dd>
+						<dd><a href="javascript:;">小米部落</a></dd>
+						<dd><a href="javascript:;">官方微信</a></dd>
+					</dl>
+					<dl class="col-links">
+						<dt>特色服务</dt>
+						<dd><a href="javascript:;">F码通道</a></dd>
+						<dd><a href="javascript:;">小米移动</a></dd>
+						<dd><a href="javascript:;">防伪查询</a></dd>
+					</dl>
+					<div class="col-contact">
+						<p class="phone">400-100-5678</p>
+						<p>
+							<span>周一至周日8:00-18:00</span><br>
+							（仅收市话费）
+							<a class="btn-line-primary">
+								<i class="iconfont">&#xe611;</i>
+								24小时在线客服
+							</a>
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="site-info">
+			<div class="container">
+				<img src="img/footer.png" / >
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+		<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="js/json2.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+	</body>
+</html>
