@@ -497,7 +497,7 @@ $(function(){
 		 	this.logoff.click(function(){
 		 		var userinfo = JSON.parse( $.cookie('userinfo') );
 		 		userinfo.isLogin = false;
-		 		$.cookie('userinfo',JSON.stringify(userinfo),{expires:7,path:'/mi'});
+		 		$.cookie('userinfo',JSON.stringify(userinfo),{expires:7,path:'/'});
 		 		location.reload();
 		 	})
 		 },
@@ -533,7 +533,7 @@ $(function(){
 		},
 		//设置购物车cookie
 		setCart: function(){
-			$.cookie('xiaomi-five',JSON.stringify(this.cart),{expires: 7,path:'/mi'});
+			$.cookie('xiaomi-five',JSON.stringify(this.cart),{expires: 7,path:'/'});
 		}
 	}
 	havelogin.init();

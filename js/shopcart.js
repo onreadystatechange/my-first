@@ -130,7 +130,7 @@ $(function(){
 				}else{
 					userCart[goods.dataId].gcolor[goods.dataGd].amount++;
 				}
-				$.cookie('xiaomi-five',JSON.stringify(userCart),{expires: 7,path:'/mi'});
+				$.cookie('xiaomi-five',JSON.stringify(userCart),{expires: 7,path:'/'});
 				console.log(userCart)
 			})
 		}

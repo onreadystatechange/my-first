@@ -142,7 +142,7 @@ $(function(){
 							phone: that.phone.val(),
 							isLogin: false
 						};
-					$.cookie('userinfo',JSON.stringify(userinfo),{expires:7,path:'/mi'});
+					$.cookie('userinfo',JSON.stringify(userinfo),{expires:7,path:'/'});
 					location.href = "jump.html";
 				}
 			})

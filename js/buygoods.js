@@ -291,7 +291,7 @@ $(function(){
 		},
 		//设置购物车cookie
 		setCart: function(){
-			$.cookie('xiaomi-five',JSON.stringify(this.cart),{expires: 7,path:'/mi'});
+			$.cookie('xiaomi-five',JSON.stringify(this.cart),{expires: 7,path:'/'});
 		}
 	}
 	cartHandler.init();
